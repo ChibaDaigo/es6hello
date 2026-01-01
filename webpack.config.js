@@ -6,6 +6,9 @@ module.exports = {
     open: true,
     hot: true,
     port: 8080,
+    static: {
+      directory: path.join(__dirname, "public"),
+    },
   },
   entry: { app: "./src/index.js" },
   output: {
